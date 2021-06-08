@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prueba tecnica</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="menu-desktop" class="menu-desktop">
+      <ul>
+        <li class="logo">
+          <img
+            src="https://titamedia.com/wp-content/uploads/2021/05/Logo_TitaMediaNublack.png"
+            alt=""
+            class="icon"
+          />
+        </li>
+        <li>
+          <a href="#search" class="searchLi"
+            ><img
+              class="search"
+              src="./assets/images/vidrio-de-aumento.svg"
+              alt=""
+          /></a>
+        </li>
+        <li><a href="#app">App</a></li>
+        <li><a href="#photography">Photography</a></li>
+        <li><a href="#web">Web</a></li>
+        <li><a href="#news">Branding</a></li>
+        <li><a class="active" href="#all">All</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-container">
+      <div class="topnav">
+        <a href="#home" class="active"
+          ><img
+            src="https://titamedia.com/wp-content/uploads/2021/05/Logo_TitaMediaNublack.png"
+            alt=""
+            class="iconMobile"
+        /></a>
+        <div id="menuMobile" class="menuMobile">
+          <a href="#app">App</a>
+          <a href="#photography">Photography</a>
+          <a href="#web">Web</a>
+          <a href="#news">Branding</a>
+          <a href="#all">All</a>
+        </div>
+        <a href="javascript:void(0);" class="barMobile" onclick="menuMobile()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="content-banner">
+        <p><span class="title-banner">Explore beyond horizon</span></p>
+        <p>
+          <span class="content-banner"
+            >Magna mundi referrentur quo, no rebum dignisiim qui.<br />Per
+            quodsl accusafa id, agam labores.</span
+          >
+        </p>
+        <button class="button-banner">VIEW OUR WORK</button>
+      </div>
+    </div>
+    <div class="buttons">
+      <button
+        id="all"
+        class="button activeButton"
+        onclick="selectCategory(null)"
+      >
+        All
+      </button>
+      <button id="branding" class="button" onclick="selectCategory('branding')">
+        Branding
+      </button>
+      <button id="web" class="button" onclick="selectCategory('web')">
+        Web
+      </button>
+      <button
+        id="photography"
+        class="button"
+        onclick="selectCategory('photography')"
+      >
+        Photography
+      </button>
+      <button id="app" class="button" onclick="selectCategory('app')">
+        App
+      </button>
+    </div>
+    <div class="content" id="content">
+      <div class="row" id="row"></div>
+    </div>
+    <div class="buttons">
+      <button class="button active">Show more</button>
+    </div>
+    <div class="footer">
+      <p>&copy2016 - <span>Sneak</span> All right Reserved</p>
+    </div>
+    <script src="images.js"></script>
+    <script src="function.js"></script>
+  </body>
+</html>
